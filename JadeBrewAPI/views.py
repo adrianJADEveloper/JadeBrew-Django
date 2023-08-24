@@ -11,7 +11,9 @@ def form_view(request):
     
     if request.method == 'POST':
         form = MenuForm(request.POST)
+
         print(request.POST)
+        print("Hello, CodeSpace!")
 
         if form.is_valid():
             cd = form.cleaned_data
